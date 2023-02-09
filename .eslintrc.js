@@ -9,6 +9,7 @@ module.exports = {
 		'plugin:react/recommended',
 		'plugin:@typescript-eslint/recommended',
 		'plugin:react/jsx-runtime',
+		'plugin:i18next/recommended',
 	],
 	overrides: [],
 	parser: '@typescript-eslint/parser',
@@ -19,7 +20,7 @@ module.exports = {
 		},
 		sourceType: 'module',
 	},
-	plugins: ['react', '@typescript-eslint'],
+	plugins: ['react', '@typescript-eslint', 'i18next'],
 	rules: {
 		indent: ['off', 2],
 		'linebreak-style': ['error', 'windows'],
@@ -38,6 +39,7 @@ module.exports = {
 		'import/extensions': 'off',
 		'import/no-extraneous-dependencies': 'off',
 		'no-underscore-dangle': 'off',
+		'i18next/no-literal-string': ['error', { markupOnly: true, onlyAttribute: [''] }],
 	},
 	globals: {
 		__IS_DEV__: true,
