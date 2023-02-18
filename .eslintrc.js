@@ -23,7 +23,7 @@ module.exports = {
 	plugins: ['react', '@typescript-eslint', 'i18next'],
 	rules: {
 		indent: ['off', 2],
-		'linebreak-style': ['error', 'windows'],
+		'linebreak-style': 0,
 		quotes: ['error', 'single'],
 		semi: ['error', 'always'],
 		'react/no-set-state': 'off',
@@ -40,7 +40,7 @@ module.exports = {
 		'import/no-extraneous-dependencies': 'off',
 		'no-underscore-dangle': 'off',
 		'i18next/no-literal-string': ['error', { markupOnly: true, ignoreAttribute: ['data-testid'] }],
-		"validateLineBreaks": "LF"
+
 	},
 	globals: {
 		__IS_DEV__: true,
