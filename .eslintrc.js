@@ -23,7 +23,7 @@ module.exports = {
 	plugins: ['react', '@typescript-eslint', 'i18next'],
 	rules: {
 		indent: ['off', 2],
-		'linebreak-style': 0,
+		'linebreak-style': off,
 		quotes: ['error', 'single'],
 		semi: ['error', 'always'],
 		'react/no-set-state': 'off',
