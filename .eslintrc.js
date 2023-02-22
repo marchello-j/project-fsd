@@ -1,4 +1,3 @@
-/* eslint-disable no-undef */
 module.exports = {
 	env: {
 		browser: true,
@@ -11,6 +10,7 @@ module.exports = {
 		'plugin:@typescript-eslint/recommended',
 		'plugin:react/jsx-runtime',
 		'plugin:i18next/recommended',
+		'react-hooks',
 	],
 	parser: '@typescript-eslint/parser',
 	parserOptions: {
@@ -20,7 +20,7 @@ module.exports = {
 		},
 		sourceType: 'module',
 	},
-	plugins: ['react', '@typescript-eslint', 'i18next'],
+	plugins: ['react', '@typescript-eslint', 'i18next', 'react-hooks'],
 	rules: {
 		indent: ['off', 2],
 		'linebreak-style': 0,
@@ -39,7 +39,17 @@ module.exports = {
 		'import/extensions': 'off',
 		'import/no-extraneous-dependencies': 'off',
 		'no-underscore-dangle': 'off',
-		'i18next/no-literal-string': ['error', { markupOnly: true, ignoreAttribute: ['data-testid'] }],
+		'i18next/no-literal-string': [
+			'error',
+			{
+				markupOnly: true,
+				ignoreAttribute: ['data-testid', 'to'],
+			},
+		],
+		'jsx-a11y/no-static-element-interactions': 'off',
+		'jsx-a11y/click-events-have-key-events': 'off',
+		'react-hooks/rules-of-hooks': 'error',
+		'react-hooks/exhaustive-deps': 'error',
 	},
 	globals: {
 		__IS_DEV__: true,
