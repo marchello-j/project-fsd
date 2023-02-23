@@ -2,18 +2,18 @@ import { useTranslation } from 'react-i18next';
 import { useDispatch, useSelector } from 'react-redux';
 import { Button } from 'shared/ui/Button/Button';
 import { getCounterValue } from '../Modal/selectors/getCounterValue/getCounterValue';
-import { CounterActions } from '../Modal/slice/counterSlice';
+import { CounterActions as counterActions } from '../Modal/slice/counterSlice';
 
 export const Counter = () => {
 	const { t } = useTranslation();
 	const dispatch = useDispatch();
 	const counterValue = useSelector(getCounterValue);
 	const increment = () => {
-		dispatch(CounterActions.increment());
+		dispatch(counterActions.increment());
 	};
 
 	const decrement = () => {
-		dispatch(CounterActions.decrement());
+		dispatch(counterActions.decrement());
 	};
 	return (
 		<div className=''>

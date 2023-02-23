@@ -3,13 +3,12 @@ import { render } from '@testing-library/react';
 import { I18nextProvider } from 'react-i18next';
 import i18nForTests from 'shared/config/i18n/i18nForTests';
 import { MemoryRouter } from 'react-router-dom';
-import { StoreProvider } from 'app/providers/StoreProvider';
-import { StateShema } from 'app/providers/StoreProvider/config/StateShema';
+import { StateSchema, StoreProvider } from 'app/providers/StoreProvider';
 import { DeepPartial } from '@reduxjs/toolkit';
 
 export interface componentRenderOptions {
 	route?: string;
-	initialState?: DeepPartial<StateShema>;
+	initialState?: DeepPartial<StateSchema>;
 }
 
 export function componentRender(component: ReactNode, options: componentRenderOptions = {}) {
