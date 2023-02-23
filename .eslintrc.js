@@ -1,3 +1,4 @@
+// eslint-disable-next-line no-undef
 module.exports = {
 	env: {
 		browser: true,
@@ -10,7 +11,6 @@ module.exports = {
 		'plugin:@typescript-eslint/recommended',
 		'plugin:react/jsx-runtime',
 		'plugin:i18next/recommended',
-		'react-hooks',
 	],
 	parser: '@typescript-eslint/parser',
 	parserOptions: {
@@ -50,6 +50,7 @@ module.exports = {
 		'jsx-a11y/click-events-have-key-events': 'off',
 		'react-hooks/rules-of-hooks': 'error',
 		'react-hooks/exhaustive-deps': 'error',
+		'no-param-reassigh': 'off',
 	},
 	globals: {
 		__IS_DEV__: true,
