@@ -4,11 +4,13 @@ import { UserSchema } from 'entities/User';
 import { loginSchema } from 'features/AuthByUsername';
 import { ReducersMapObject } from '@reduxjs/toolkit';
 import { AnyAction, Reducer } from '@reduxjs/toolkit';
+import { ProfileSchema } from 'entities/Profile';
 
 export interface StateSchema {
 	counter: CounterShema;
 	user: UserSchema;
 	loginForm?: loginSchema;
+	profile?: ProfileSchema;
 }
 
 export type StateSchemaKey = keyof StateSchema;

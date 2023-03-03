@@ -26,6 +26,7 @@ module.exports = {
 		'linebreak-style': 0,
 		quotes: ['error', 'single'],
 		semi: ['error', 'always'],
+		'react/display-name': 'off',
 		'react/no-set-state': 'off',
 		'react/react-in-jsx-scope': 'off',
 		'@typescript-eslint/ban-ts-comment': 'off',

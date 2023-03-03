@@ -25,5 +25,14 @@
       "password": "123"
     }
   ],
-  "profile": { "name": "typicode" }
+  "profile": {
+    "first": "Marchello",
+    "lastname": "Zhusubaliev",
+    "age": 39,
+    "currency": "RUB",
+    "country": "Russia",
+    "city": "Moscow",
+    "username": "admin",
+    "avatar": "https://www.interfax.ru/ftproot/photos/photostory/2017/08/18/week10_700.jpg"
+  }
 }

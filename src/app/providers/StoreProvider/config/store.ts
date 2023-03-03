@@ -12,7 +12,6 @@ export function createReduxStore(
 		...asyncReducers,
 		counter: counterReducer,
 		user: userReducer,
-		
 	};
 
 	const reducerManager = createReducerManager(rootRedusers);
@@ -27,3 +26,5 @@ export function createReduxStore(
 
 	return store;
 }
+
+export type AppDispatch = ReturnType<typeof createReduxStore>['dispatch'];
