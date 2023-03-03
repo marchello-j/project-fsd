@@ -10,7 +10,6 @@ import { Text, TextTheme } from 'widgets/Text/Text';
 import cls from './LoginForm.module.scss';
 
 import { loginByUsername } from '../../model/services/loginByUsername/loginByUsername';
-import { ReduxStoreWithManager } from 'app/providers/StoreProvider';
 import { getLoginUsername } from '../../model/selectors/getLoginUsername/getLoginUsername';
 import { getLoginPassword } from '../../model/selectors/getLoginPassword/getLoginPassword';
 import { getLoginIsLoading } from '../../model/selectors/getLoginIsLoading/getLoginIsLoading';

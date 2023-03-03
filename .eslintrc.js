@@ -53,6 +53,8 @@ module.exports = {
 		'react-hooks/exhaustive-deps': 'error',
 		'no-param-reassigh': 'off',
 		'@typescript-eslint/no-var-requires': 'off',
+		'no-mixed-spaces-and-tabs': 0,
+		'no-nudef': 'off',
 	},
 	globals: {
 		__IS_DEV__: true,
